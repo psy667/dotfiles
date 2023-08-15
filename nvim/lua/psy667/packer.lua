@@ -10,13 +10,13 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use({ 
-		'rose-pine/neovim', 
-		as = 'rose-pine', 
-		config = function()
-			vim.cmd('colorscheme rose-pine')
-		end
-	})
+    use({
+        'rose-pine/neovim',
+        as = 'rose-pine',
+        config = function()
+            vim.cmd('colorscheme rose-pine')
+        end
+    })
 
 	use {
 		'nvim-treesitter/nvim-treesitter',
@@ -45,4 +45,8 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},     -- Required
 		}
 	}
+    use { "github/copilot.vim" }
+    use { "preservim/nerdtree" }
+    use { "vim-airline/vim-airline" }
+    use { "vim-airline/vim-airline-themes" }
 end)

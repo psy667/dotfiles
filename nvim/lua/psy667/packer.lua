@@ -5,9 +5,9 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.2',
-		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		'nvim-telescope/telescope.nvim',
+        tag = '0.1.2',
+		requires = { {'nvim-lua/plenary.nvim'} },
 	}
 
     use({
@@ -49,4 +49,5 @@ return require('packer').startup(function(use)
     use { "preservim/nerdtree" }
     use { "vim-airline/vim-airline" }
     use { "vim-airline/vim-airline-themes" }
+    use { "wakatime/vim-wakatime" }
 end)
